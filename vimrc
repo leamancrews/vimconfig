@@ -29,8 +29,8 @@ if has("autocmd")
 
   filetype plugin indent on
 
- " start Vundle
- " set the runtime path to include Vundle and initialize
+" start Vundle
+" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -43,14 +43,16 @@ Plugin 'mcchrish/nnn.vim'
 " vimwiki install
 Plugin 'vimwiki/vimwiki'
 
-" plugin on GitHub repo
+" fugitive install
 Plugin 'tpope/vim-fugitive'
 
+" pencil install
+Plugin 'reedes/vim-pencil'
+
 call vundle#end()            " required
- " end Vundle
+" end Vundle
 
-
-" More autocmd stuff
+" vimrcEx augroup
   augroup vimrcEx
   au!
 
@@ -66,6 +68,14 @@ call vundle#end()            " required
     \ endif
 
   augroup END
+
+" pencil augroup
+" Initialize pencil for defined filetypes
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+  autocmd FileType text         call pencil#init()
+augroup END
 
 else
 
