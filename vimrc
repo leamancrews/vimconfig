@@ -83,7 +83,7 @@ augroup END
 
 else
 
-  set autoindent		" always set autoindenting on
+  set autoindent		" autoindenting without autocmd
 
 endif " has("autocmd")
 " end autocmd group
