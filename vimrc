@@ -25,7 +25,7 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
-" set fold method to syntax highlighting
+" set fold method to syntax 
 set foldmethod=syntax
 
 " autocmd group
