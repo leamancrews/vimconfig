@@ -14,6 +14,10 @@ set laststatus=2	" always display the status bar
 let mapleader = ','
 map Q gq
 
+" Move visual selection
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv”
+
 " Syntax highlighting on for color terminals
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
