@@ -97,7 +97,9 @@ colo ron
 " Don't color directories in nnn
 let g:nnn#command = 'nnn -C'
 
-" Cache syntax highlighting groups
-" For better airline performance
+" airline customizations
 let g:airline_highlighting_cache = 1
-
+let g:airline#extensions#default#layout = [
+      \ [ 'a', 'b', 'c' ],
+      \ [ 'x', 'y', 'z' ]
+      \ ]
