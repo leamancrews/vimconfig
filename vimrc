@@ -10,7 +10,6 @@ set number		" show line numbers
 set showmode		" show current mode at the bottom
 set autoread		" always reload changed files
 set hidden		" better buffer management
-set laststatus=2	" always display the status bar
 set guicursor=a:blinkon0
 let mapleader = ','
 map Q gq
@@ -31,7 +30,7 @@ set foldmethod=syntax
 " autocmd group
 if has("autocmd")
 
-	  filetype plugin indent on
+	filetype plugin indent on
 
 	" start Vundle
 	" set the runtime path to include Vundle and initialize
@@ -52,6 +51,9 @@ if has("autocmd")
 
 	" pencil install
 	Plugin 'reedes/vim-pencil'
+
+	" airline install
+	Plugin 'vim-airline/vim-airline'
 
 	call vundle#end()            " required
 	" end Vundle
@@ -94,4 +96,8 @@ colo ron
 
 " Don't color directories in nnn
 let g:nnn#command = 'nnn -C'
+
+" Cache syntax highlighting groups
+" For better airline performance
+let g:airline_highlighting_cache = 1
 
