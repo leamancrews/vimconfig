@@ -55,6 +55,9 @@ if has("autocmd")
 	" airline install
 	Plugin 'vim-airline/vim-airline'
 
+	" traces install
+	Plugin 'markonm/traces.vim'
+
 	call vundle#end()            " required
 	" end Vundle
 
@@ -103,3 +106,4 @@ let g:airline#extensions#default#layout = [
       \ [ 'a', 'b', 'c' ],
       \ [ 'x', 'y', 'z' ]
       \ ]
+
