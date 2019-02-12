@@ -14,6 +14,9 @@ set guicursor=a:blinkon0
 let mapleader = ','
 map Q gq
 
+" Save file with ,w
+nnoremap <Leader>w :w<CR>
+
 " Move visual selection
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv”
@@ -24,8 +27,9 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
-" set fold method to syntax 
+" set fold method to syntax and foldcolumn
 set foldmethod=syntax
+set foldcolumn=2
 
 " autocmd group
 if has("autocmd")
