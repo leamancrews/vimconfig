@@ -1,3 +1,4 @@
+" general settings
 set backspace=indent,eol,start
 set nobackup		
 set nowritebackup
@@ -8,14 +9,15 @@ set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 set number		" show line numbers
 set showmode		" show current mode at the bottom
-set autoread		" always reload changed files
+set autoread		" reload changed files
 set hidden		" better buffer management
 set guicursor=a:blinkon0
 let mapleader = ','
 map Q gq
 
-" Save file with ,w
+" Leader key mappings
 nnoremap <Leader>w :w<CR>
+nnoremap <Leader>t :.! date<CR>
 
 " Move visual selection
 vnoremap J :m '>+1<CR>gv=gv
