@@ -125,6 +125,6 @@ let g:airline#extensions#default#layout = [
       \ ]
 
 " MacDictionary mappings
-nnoremap <C-p> :MacDictWord<CR>
-nnoremap <C-S-p> :MacDictQuery<CR>
+nnoremap <Leader>d :MacDictWord<CR>
+nnoremap <Leader>q :MacDictQuery<CR>
 
