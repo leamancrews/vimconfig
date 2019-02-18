@@ -13,13 +13,14 @@ set autoread		" reload changed files
 set hidden		" better buffer management
 set wildmenu
 set guicursor=a:blinkon0
+set visualbell
 let mapleader = ','
 
 " Leader key mappings
 nnoremap <Leader>w :w<CR>		" save file
 nnoremap <Leader>t :.! date<CR>		" Insert timestamp
-vnoremap <Leader>y "+y			" Copy to system clipboard
-vnoremap <Leader>p "+p			" Paste system clipboard
+map <Leader>y "+y			" Copy to system clipboard
+map <Leader>p "+p			" Paste system clipboard
 
 " Vis function to visually
 " select a range of lines
