@@ -18,10 +18,18 @@ let mapleader = ','
 " Leader key mappings
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>t :.! date<CR>
+nnoremap <Leader>p "+p<CR>
+
+" Vis function to visually
+" select a range of lines
+" Usage: :1,42Vis
+command! -range Vis call setpos('.', [0,<line1>,0,0]) |
+                    \ exe "normal V" |
+                    \ call setpos('.', [0,<line2>,0,0])
 
 " Move visual selection
 vnoremap J :m '>+1<CR>gv=gv
-vnoremap K :m '<-2<CR>gv=gv”
+vnoremap K :m '<-2<CR>gv=gv
 
 " Syntax highlighting and highlight last search pattern
 if &t_Co > 2 || has("gui_running")
