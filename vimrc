@@ -18,8 +18,8 @@ let mapleader = ','
 " Leader key mappings
 nnoremap <Leader>w :w<CR>		" save file
 nnoremap <Leader>t :.! date<CR>		" Insert timestamp
-nnoremap <Leader>y "+y<CR>		" Copy to system clipboard
-nnoremap <Leader>p "+p<CR>		" Paste system clipboard
+vnoremap <Leader>y "+y			" Copy to system clipboard
+vnoremap <Leader>p "+p			" Paste system clipboard
 
 " Vis function to visually
 " select a range of lines
