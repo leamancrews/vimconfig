@@ -11,6 +11,7 @@ set number		" show line numbers
 set showmode		" show current mode at the bottom
 set autoread		" reload changed files
 set hidden		" better buffer management
+set browsedir=buffer	" in GUI, File->Open at current directory
 set wildmenu
 set guicursor=a:blinkon0
 set visualbell
