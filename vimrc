@@ -11,9 +11,9 @@ set number		" show line numbers
 set showmode		" show current mode at the bottom
 set autoread		" reload changed files
 set hidden		" better buffer management
+set wildmenu
 set guicursor=a:blinkon0
 let mapleader = ','
-map Q gq
 
 " Leader key mappings
 nnoremap <Leader>w :w<CR>
@@ -55,11 +55,17 @@ if has("autocmd")
 	" fugitive install
 	Plugin 'tpope/vim-fugitive'
 
+	" abolish install
+	Plugin 'tpope/vim-abolish'
+
 	" pencil install
 	Plugin 'reedes/vim-pencil'
 
 	" airline install
 	Plugin 'vim-airline/vim-airline'
+
+	" macDictionary install
+	Plugin 'johngrib/vim-mac-dictionary'
 
 	call vundle#end()            " required
 	" end Vundle
@@ -109,4 +115,8 @@ let g:airline#extensions#default#layout = [
       \ [ 'a', 'b', 'c' ],
       \ [ 'x', 'y', 'z' ]
       \ ]
+
+" MacDictionary mappings
+nnoremap <C-p> :MacDictWord<CR>
+nnoremap <C-S-p> :MacDictQuery<CR>
 
