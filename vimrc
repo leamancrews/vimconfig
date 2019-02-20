@@ -20,8 +20,9 @@ let mapleader = ','
 " Leader key mappings
 nnoremap <Leader>w :w<CR>		" save file
 nnoremap <Leader>t :.! date<CR>		" Insert timestamp
-map <Leader>y "+y			" Copy to system clipboard
-map <Leader>p "+p			" Paste system clipboard
+nnoremap <Leader>y "+y			" Copy to system clipboard
+nnoremap <Leader>p "+p			" Paste system clipboard
+nnoremap <Leader>h :nohls<CR>		" Clear search highlighting
 
 " Vis function to visually
 " select a range of lines
@@ -78,6 +79,12 @@ if has("autocmd")
 	" macDictionary install
 	Plugin 'johngrib/vim-mac-dictionary'
 
+	" lexical install
+	Plugin 'reedes/vim-lexical'
+
+	" wordy install
+	Plugin 'reedes/vim-wordy'
+
 	call vundle#end()            " required
 	" end Vundle
 
@@ -85,8 +92,8 @@ if has("autocmd")
 	  augroup vimrcEx
 	  au!
 
-	  " For all text files set textwidth to 80 characters.
-	  autocmd FileType text setlocal textwidth=80
+	  " For all text files set textwidth to 74 characters.
+	  autocmd FileType text setlocal textwidth=74
 
 	  " When editing a file, always jump to the last known cursor position.
 	  " Don't do it when the position is invalid or when inside an event handler
@@ -104,6 +111,15 @@ if has("autocmd")
 	  autocmd!
 	  autocmd FileType markdown,mkd call pencil#init()
 	  autocmd FileType text         call pencil#init()
+	augroup END
+
+	" lexical augroup
+	" Initialize lexical for defined filetypes
+	augroup lexical
+	  autocmd!
+	  autocmd FileType markdown,mkd call lexical#init()
+	  autocmd FileType textile call lexical#init()
+	  autocmd FileType text call lexical#init({ 'spell': 0 })
 	augroup END
 
 else
