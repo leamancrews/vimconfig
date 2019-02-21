@@ -85,6 +85,9 @@ if has("autocmd")
 	" wordy install
 	Plugin 'reedes/vim-wordy'
 
+	" fzf install
+	Plugin 'junegunn/fzf.vim'
+
 	call vundle#end()            " required
 	" end Vundle
 
