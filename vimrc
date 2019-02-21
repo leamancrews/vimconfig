@@ -20,8 +20,8 @@ let mapleader = ','
 " Leader key mappings
 nnoremap <Leader>w :w<CR>		" save file
 nnoremap <Leader>t :.! date<CR>		" Insert timestamp
-nnoremap <Leader>y "+y			" Copy to system clipboard
-nnoremap <Leader>p "+p			" Paste system clipboard
+vnoremap <Leader>y "+y			" Copy to system clipboard
+vnoremap <Leader>p "+p			" Paste system clipboard
 nnoremap <Leader>h :nohls<CR>		" Clear search highlighting
 
 " Vis function to visually
