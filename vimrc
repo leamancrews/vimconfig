@@ -24,7 +24,7 @@ vnoremap <Leader>y "+y			" Copy to system clipboard
 nnoremap <Leader>p "+p			" Paste system clipboard
 nnoremap <Leader>h :nohls<CR>		" Clear search highlighting
 
-" Vis function to visually
+" Vis command to visually
 " select a range of lines
 " Usage: :1,42Vis
 command! -range Vis call setpos('.', [0,<line1>,0,0]) |
@@ -85,8 +85,11 @@ if has("autocmd")
 	" wordy install
 	Plugin 'reedes/vim-wordy'
 
-	" fzf install
-	Plugin 'junegunn/fzf.vim'
+	" vim-session install
+	Plugin 'xolox/vim-session'
+
+	" vim-misc install
+	Plugin 'xolox/vim-misc'
 
 	call vundle#end()            " required
 	" end Vundle
