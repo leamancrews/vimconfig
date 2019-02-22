@@ -23,6 +23,8 @@ nnoremap <Leader>t :.! date<CR>		" Insert timestamp
 vnoremap <Leader>y "+y			" Copy to system clipboard
 nnoremap <Leader>p "+p			" Paste system clipboard
 nnoremap <Leader>h :nohls<CR>		" Clear search highlighting
+nnoremap <Leader>d :MacDictWord<CR>
+nnoremap <Leader>q :MacDictQuery<CR>
 
 " Vis command to visually
 " select a range of lines
@@ -85,11 +87,11 @@ if has("autocmd")
 	" wordy install
 	Plugin 'reedes/vim-wordy'
 
-	" vim-session install
-	Plugin 'xolox/vim-session'
-
 	" vim-misc install
 	Plugin 'xolox/vim-misc'
+
+	" sessionman install
+	Plugin 'vim-scripts/sessionman.vim'
 
 	call vundle#end()            " required
 	" end Vundle
@@ -149,7 +151,4 @@ let g:airline#extensions#default#layout = [
       \ [ 'x', 'y', 'z' ]
       \ ]
 
-" MacDictionary mappings
-nnoremap <Leader>d :MacDictWord<CR>
-nnoremap <Leader>q :MacDictQuery<CR>
 
