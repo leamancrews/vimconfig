@@ -26,6 +26,7 @@ let mapleader = ','
 inoremap <S-CR> <Esc>
 
 " Leader key mappings
+nnoremap <Leader>o :tabedit 
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>t :.! date<CR>
 vnoremap <Leader>y "+y		
