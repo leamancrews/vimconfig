@@ -23,6 +23,7 @@ set foldcolumn=2
 set hlsearch
 syntax on
 let mapleader = ','		
+inoremap <S-CR> <Esc>
 
 " Leader key mappings
 nnoremap <Leader>w :w<CR>
