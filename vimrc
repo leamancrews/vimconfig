@@ -33,6 +33,7 @@ nnoremap <Leader>p "+p
 nnoremap <Leader>h :nohls<CR>
 nnoremap <Leader>d :MacDictWord<CR>
 nnoremap <Leader>q :MacDictQuery<CR>
+nnoremap <Leader>f :TogglePencil<CR>
 
 " Vis command to visually
 " select a range of lines
