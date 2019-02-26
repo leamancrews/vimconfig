@@ -91,12 +91,9 @@ Abolish boxs	boxes
 Abolish brodcast	broadcast 
 Abolish butthe	but the 
 Abolish bve	be 
-"Abolish byt he	by the 
 Abolish cafe	café 
 Abolish caharcter	character 
 Abolish cal{cul,u}lated	calculated 
-"Abolish can't of been	can’t have been 
-"Abolish can;t	can’t 
 Abolish candidtae{,s}	candidate{}
 Abolish cat{a,egi}gor{y,ies}	cat{e}gor{}
 Abolish certian	certain 
@@ -123,7 +120,6 @@ Abolish comming	coming
 Abolish commit{ee,te,ty}	committee 
 Abolish comntain{,s}	contain{}
 Abolish compair	compare 
-"Abolish company;s	company’s 
 Abolish compleat{ed,ly,ness}	complet{ed,ely,eness}
 Abolish complet{ly,ness}	complete{}
 Abolish composate	composite 
@@ -144,11 +140,6 @@ Abolish corproation{,s}	corporation{}
 Abolish corruptable	corruptible 
 Abolish cotten	cotton 
 Abolish coudl	could 
-"Abolish coudln't	couldn’t 
-"Abolish coudn't	couldn’t 
-"Abolish could of been	could have been 
-"Abolish could of had	could have had 
-"Abolish couldn;t	couldn’t 
 Abolish couldnt	couldn’t
 Abolish couldthe	could the 
 Abolish cpoy	copy 
@@ -163,7 +154,6 @@ Abolish decison{,s}	decision{}
 Abolish decor	décor 
 Abolish defendent{,s}	defendant{}
 Abolish definately	definitely 
-"Abolish deja vu	déjà vu 
 Abolish deptartment	department 
 Abolish desi{c,s}ion{,s}	deci{s}ion{}
 Abolish detente	détente 
@@ -173,7 +163,6 @@ Abolish developor{,s}	developer{}
 Abolish develpment{,s}	development{}
 Abolish diaplay	display 
 Abolish did{i,}nt	didn’t 
-"Abolish didn;t	didn’t 
 Abolish didnot	did not 
 Abolish dif{ef,fe}r{e,a}n{t,ce,ces}	dif{fe}r{e}n{}
 Abolish differemt	different 
@@ -187,19 +176,12 @@ Abolish dispaly	display
 Abolish dissonent	dissonant 
 Abolish distribusion{,s}	distribution{}
 Abolish divsion	division 
-"Abolish do'nt	don’t 
 Abolish docu{ement,emnt,metn,mnet}{,s}	docu{ment}{}
-"Abolish doe snot	does not 
-"Abolish doens't	doesn’t 
 Abolish doese	does 
-"Abolish doesn;t	doesn’t 
 Abolish doesnt	doesn’t 
 Abolish do{nig,ign,img,ind}	doing 
 Abolish dollers	dollars 
-"Abolish don't no	don’t know 
-"Abolish don;t	don’t 
 Abolish dont	don’t 
-"Abolish dosn't	doesn’t 
 Abolish driveing	driving 
 Abolish drnik	drink 
 Abolish eclair	éclair 
@@ -244,7 +226,6 @@ Abolish foudn	found
 Abolish foward{,s,ing,er}	forward{}
 Abolish freind{,ly,s}	friend{} 
 Abolish frmo	from 
-"Abolish fromt he	from the 
 Abolish fromthe	from the 
 Abolish furneral	funeral 
 Abolish fwe	few 
@@ -264,22 +245,17 @@ Abolish gruop{,s}	group
 Abolish grwo	grow 
 Abolish guidlines	guidelines 
 Abolish hadbeen	had been 
-"Abolish hadn;t	hadn’t 
 Abolish haev	have 
 Abolish hapen{,ed,ing,s}	happen{}
 Abolish happend	happened 
 Abolish hasbeen	has been 
-"Abolish hasn;t	hasn’t 
 Abolish hasnt	hasn’t 
 Abolish havebeen	have been 
 Abolish haveing	having 
-"Abolish haven;t	haven’t 
 Abolish hda	had 
-"Abolish he;ll	he’ll 
 Abolish hearign	hearing 
 Abolish helpfull	helpful 
 Abolish herat	heart 
-"Abolish here;s	here’s 
 Abolish hesaid	he said 
 Abolish hewas	he was 
 Abolish hge	he 
@@ -294,21 +270,13 @@ Abolish htey	they
 Abolish hting	thing 
 Abolish htink	think 
 Abolish htis	this 
-"Abolish htp:	http: 
-"Abolish http:\\	http:// 
 Abolish httpL	http: 
 Abolish hva{e,ing}	hav{} 
 Abolish hwich	which 
-"Abolish i	I 
-"Abolish i snot	is not 
-"Abolish I"m	I’m 
-"Abolish I;d	I’d 
-"Abolish I;ll	I’ll 
 Abolish idae	idea 
 Abolish idaes	ideas 
 Abolish identofy	identify 
 Abolish ihs	his 
-"Abolish iits the	it’s the 
 Abolish imediat{e,ly}	immediate{,ly}
 Abolish immediatly	immediately 
 Abolish import{en,na}t{,ly}	import{an}t{}
@@ -326,22 +294,14 @@ Abolish inital	initial
 Abolish instaleld	installed 
 Abolish insted	instead 
 Abolish insurence	insurance 
-"Abolish int he	in the 
 Abolish inteh	in the 
 Abolish interum	interim 
 Abolish inthe	in the 
 Abolish inwhich	in which 
-"Abolish isn;t	isn’t 
 Abolish isthe	is the 
-"Abolish it snot	it’s not 
-"Abolish it' snot	it’s not 
-"Abolish it;ll	it’ll 
-"Abolish it;s	it’s 
 Abolish itis	it is 
 Abolish ititial	initial 
 Abolish itnerest{,ed,int,s}	interest{}
-"Abolish its a	it’s a 
-"Abolish its the	it’s the 
 Abolish itwas	it was 
 Abolish iwll	will 
 Abolish iwth	with 
@@ -353,9 +313,6 @@ Abolish labratory	laboratory
 Abolish lastyear	last year 
 Abolish learnign	learning 
 Abolish lenght	length 
-"Abolish let's him	lets him 
-"Abolish let's it	lets it 
-"Abolish let;s	let’s 
 Abolish levle	level 
 Abolish lib{ary,arry,rery}	library 
 Abolish liek{,d}	like{}
@@ -375,20 +332,14 @@ Abolish makeing	making
 Abolish managment	management 
 Abolish mantain	maintain 
 Abolish marraige	marriage 
-"Abolish may of been	may have been 
-"Abolish may of had	may have had 
 Abolish memeber	member 
 Abolish merchent	merchant 
 Abolish mesage{,s}	message{}
-"Abolish might of been	might have been 
-"Abolish might of had	might have had 
 Abolish mispell{,ing,ings,ed,s}	misspell{}
 Abolish mka{e,es,ing}	mak{}
 Abolish moeny	money 
 Abolish morgage	mortgage 
 Abolish mroe	more 
-"Abolish must of been	must have been 
-"Abolish must of had	must have had 
 Abolish mysefl	myself 
 Abolish myu	my 
 Abolish naive	naïve 
@@ -404,14 +355,12 @@ Abolish occassion	occasion
 Abolish oc{,c}ur{,ed,ence,rance}	oc{c}urr{,ed,ence,ence}
 Abolish oeprator	operator 
 Abolish ofits	of its 
-"Abolish oft he	of the 
 Abolish ofthe	of the 
 Abolish oging	going 
 Abolish ohter	other 
 Abolish omre	more 
 Abolish oneof	one of 
 Abolish onepoint	one point 
-"Abolish ont he	on the 
 Abolish onthe	on the 
 Abolish onyl	only 
 Abolish oppasite	opposite 
@@ -487,7 +436,6 @@ Abolish rwite	write
 Abolish rythm	rhythm 
 Abolish saidhe	said he 
 Abolish saidit	said it 
-"Abolish saidt he	said the 
 Abolish saidthat	said that 
 Abolish saidthe	said the 
 Abolish scedul{e,es,ed,ing,er}	schedul{}
@@ -500,16 +448,11 @@ Abolish sentance	sentence
 Abolish sep{are,er}ate	separate 
 Abolish sercumstances	circumstances 
 Abolish shcool	school 
-"Abolish she;ll	she’ll 
 Abolish shesaid	she said 
 Abolish shineing	shining 
 Abolish shiped	shipped 
 Abolish shoudl	should 
-"Abolish shoudln't	shouldn’t 
-"Abolish should of been	should have been 
-"Abolish should of had	should have had 
 Abolish shouldent	shouldn’t 
-"Abolish shouldn;t	shouldn’t 
 Abolish shouldnt	shouldn’t 
 Abolish showinf	showing 
 Abolish signifacnt	significant 
@@ -528,7 +471,6 @@ Abolish someting	something
 Abolish somthing	something 
 Abolish somewaht	somewhat 
 Abolish somtimes	sometimes 
-"Abolish sot hat	so that 
 Abolish soudn{,s}	sound{}
 Abolish speach	speech 
 Abolish specificaly{,l}	specifically 
@@ -558,34 +500,21 @@ Abolish tath	that
 Abolish tecnical	technical 
 Abolish teh	the 
 Abolish tehy	they 
-"Abolish tellt he	tell the 
 Abolish termoil	turmoil 
 Abolish tghe	the 
 Abolish tghis	this 
 Abolish thansk	thanks 
 Abolish thats	that’s 
-"Abolish thatt he	that the 
 Abolish thatthe	that the 
 Abolish thecompany	the company 
 Abolish thefirst	the first 
 Abolish thegovernment	the government 
-"Abolish their are	there are 
-"Abolish their is	there is 
 Abolish themself	themselves 
 Abolish themselfs	themselves 
 Abolish thenew	the new 
-"Abolish there's is	theirs is 
 Abolish theri	their 
 Abolish thesame	the same 
 Abolish thetwo	the two 
-"Abolish they're are	there are 
-"Abolish they're is	there is 
-"Abolish they;l	they’ll 
-"Abolish they;ll	they’ll 
-"Abolish they;r	they’re 
-"Abolish they;re	they’re 
-"Abolish they;v	they’ve 
-"Abolish they;ve	they’ve 
 Abolish theyll	they’ll 
 Abolish theyve	they’ve 
 Abolish thgat	that 
@@ -608,10 +537,8 @@ Abolish tka{e,es,ing}	tak{}
 Abolish tlaking	talking 
 Abolish todya	today 
 Abolish togehter	together 
-"Abolish toldt he	told the 
 Abolish tomorow	tomorrow 
 Abolish ton{gih,ihg}t	tonight 
-"Abolish tot he	to the 
 Abolish totaly{,l}	totally 
 Abolish tothe	to the 
 Abolish towrad	toward 
@@ -624,7 +551,6 @@ Abolish tyhat	that
 Abolish tyhe	the 
 Abolish udnerstand	understand 
 Abolish understnad	understand 
-"Abolish undert he	under the 
 Abolish UnitedStates	United States 
 Abolish unliek	unlike 
 Abolish unpleasently	unpleasantly 
@@ -633,57 +559,35 @@ Abolish useing	using
 Abolish usualyl	usually 
 Abolish veyr	very 
 Abolish virtualyl	virtually 
-"Abolish vis-a-vis	vis-à-vis 
 Abolish vrey	very 
 Abolish vulnerible	vulnerable 
-"Abolish wa snot	was not 
 Abolish waht	what 
 Abolish warrent	warrant 
 Abolish wasnt	wasn’t 
 Abolish watn	want 
-"Abolish we;d	we’d 
-"Abolish we;ll	we’ll 
-"Abolish we;re	we’re 
-"Abolish we;ve	we’ve 
 Abolish wehn	when 
-"Abolish wern't	weren’t 
 Abolish werre	were 
-"Abolish what;s	what’s 
 Abolish whcih	which 
-"Abolish whent he	when the 
-"Abolish where;s	where’s 
 Abolish wherre	where 
 Abolish whic	which 
-"Abolish whicht he	which the 
 Abolish whihc	which 
-"Abolish who;s	who’s 
-"Abolish who;ve	who’ve 
 Abolish whta	what 
 Abolish wief	wife 
 Abolish wierd	weird 
 Abolish wihch	which 
 Abolish wiht	with 
-"Abolish will of been	will have been 
-"Abolish will of had	will have had 
 Abolish willbe	will be 
 Abolish windoes	windows 
 Abolish witha	with a 
 Abolish withe	with 
-"Abolish witht he	with the 
 Abolish withthe	with the 
 Abolish wiull	will 
 Abolish wnat{,s,ed}	want{}
-"Abolish wo'nt	won’t 
 Abolish woh	who 
 Abolish wohle	whole 
 Abolish wokr	work 
-"Abolish won;t	won’t 
 Abolish woudl	would 
-"Abolish woudln't	wouldn’t 
-"Abolish would of been	would have been 
-"Abolish would of had	would have had 
 Abolish wouldbe	would be 
-"Abolish wouldn;t	wouldn’t 
 Abolish wouldnt	wouldn’t 
 Abolish wriet	write 
 Abolish writting	writing 
@@ -696,19 +600,7 @@ Abolish wya	way
 Abolish yera	year 
 Abolish yer{as,sa}	years 
 Abolish yoiu	you 
-"Abolish you're own	your own 
-"Abolish you;d	you’d 
-"Abolish you;re	you’re 
 Abolish youare	you are 
-"Abolish your a	you’re a 
-"Abolish your an	you’re an 
-"Abolish your her	you’re her 
-"Abolish your here	you’re here 
-"Abolish your his	you’re his 
-"Abolish your my	you’re my 
-"Abolish your the	you’re the 
-"Abolish your their	you’re their 
-"Abolish your your	you’re your 
 Abolish youve	you’ve 
 Abolish ytou	you 
 Abolish yuo{,r}	you{}
