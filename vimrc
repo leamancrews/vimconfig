@@ -84,14 +84,19 @@ Plugin 'reedes/vim-lexical'
 " wordy install
 Plugin 'reedes/vim-wordy'
 
-" vim-misc install
-Plugin 'xolox/vim-misc'
-
 " sessionman install
 Plugin 'vim-scripts/sessionman.vim'
 
 " yankstack install
 Plugin 'maxbrunsfeld/vim-yankstack'
+
+" plugins for tpope's
+" vim-sexp mappings
+" for regular people
+Plugin 'tpope/vim-sexp-mappings-for-regular-people' 
+Plugin 'guns/vim-sexp' 
+Plugin 'tpope/vim-repeat' 
+Plugin 'tpope/vim-surround'
 
 call vundle#end()            " required
 " end Vundle
