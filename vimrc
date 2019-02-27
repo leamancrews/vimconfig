@@ -17,13 +17,25 @@ set browsedir=buffer		" in GUI, File->Open at current directory
 set wildmenu			" show tab completions
 set guicursor=a:blinkon0	" no blinking cursor in GUI
 set visualbell			" no beeping
-set macmeta			" alt=meta in MacVim
+" set macmeta			" alt=meta in MacVim
 set foldmethod=syntax
 set foldcolumn=2
 set hlsearch
 syntax on
 let mapleader = ','		
 inoremap <S-CR> <Esc>
+
+" Meta key
+if has("gui_macvim")
+  set macmeta 
+else
+  let c='a'
+  while c <= 'z'
+    exec "set <M-".toupper(c).">=\e".c
+    exec "imap \e".c." <M-".toupper(c).">"
+    let c = nr2char(1+char2nr(c))
+  endw
+endif
 
 " Leader key mappings
 nnoremap <Leader>o :tabedit 
@@ -34,7 +46,7 @@ nnoremap <Leader>p "+p
 nnoremap <Leader>h :nohls<CR>
 nnoremap <Leader>d :MacDictWord<CR>
 nnoremap <Leader>q :MacDictQuery<CR>
-nnoremap <Leader>f :TogglePencil<CR>
+nnoremap <Leader>f :set wrap linebreak nolist<CR>
 
 " Vis command to visually
 " select a range of lines
@@ -69,17 +81,11 @@ Plugin 'tpope/vim-fugitive'
 " abolish install
 Plugin 'tpope/vim-abolish'
 
-" pencil install
-Plugin 'reedes/vim-pencil'
-
 " airline install
 Plugin 'vim-airline/vim-airline'
 
 " macDictionary install
 Plugin 'johngrib/vim-mac-dictionary'
-
-" lexical install
-Plugin 'reedes/vim-lexical'
 
 " wordy install
 Plugin 'reedes/vim-wordy'
@@ -90,14 +96,6 @@ Plugin 'vim-scripts/sessionman.vim'
 " yankstack install
 Plugin 'maxbrunsfeld/vim-yankstack'
 
-" plugins for tpope's
-" vim-sexp mappings
-" for regular people
-Plugin 'tpope/vim-sexp-mappings-for-regular-people' 
-Plugin 'guns/vim-sexp' 
-Plugin 'tpope/vim-repeat' 
-Plugin 'tpope/vim-surround'
-
 call vundle#end()            " required
 " end Vundle
 
@@ -107,33 +105,7 @@ augroup vimrcEx
 
    " For all text files set textwidth to 74 characters.
    autocmd FileType text setlocal textwidth=74
-
-   " When editing a file, always jump to the last known cursor position.
-   " Don't do it when the position is invalid or when inside an event handler
-   " (happens when dropping a file on gvim).
-   autocmd BufReadPost *
-     \ if line("'\"") > 0 && line("'\"") <= line("$") |
-     \   exe "normal g`\"" |
-     \ endif
-augroup END
-
-" pencil augroup
-" Initialize pencil for defined filetypes
-augroup pencil
-  autocmd!
-  autocmd FileType markdown,mkd call pencil#init()
-  autocmd FileType text         call pencil#init()
-augroup END
-
-" lexical augroup
-" Initialize lexical for defined filetypes
-augroup lexical
-  autocmd!
-  autocmd FileType markdown,mkd call lexical#init()
-  autocmd FileType textile call lexical#init()
-  autocmd FileType text call lexical#init({ 'spell': 0 })
-augroup END
-
+  
 " Don't color directories in nnn
 let g:nnn#command = 'nnn -C'
 
