@@ -53,7 +53,6 @@ nnoremap <Leader>f :set wrap linebreak nolist<CR>
 
 " Vis command to visually
 " select a range of lines
-" Usage: :1,42Vis
 command! -range Vis call setpos('.', [0,<line1>,0,0]) |
                     \ exe "normal V" |
                     \ call setpos('.', [0,<line2>,0,0])
