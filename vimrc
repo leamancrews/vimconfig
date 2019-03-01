@@ -4,7 +4,9 @@ colo ron
 set backspace=indent,eol,start
 set nobackup		
 set nowritebackup
-set noswapfile  
+set directory=~/.vim/swapfiles//
+set undodir=~/.vim/undodir
+set undofile
 set history=1000		" keep 1000 lines of command line history
 set ruler			" show the cursor position all the time
 set showcmd			" display incomplete commands
@@ -17,7 +19,6 @@ set browsedir=buffer		" in GUI, File->Open at current directory
 set wildmenu			" show tab completions
 set guicursor=a:blinkon0	" no blinking cursor in GUI
 set visualbell			" no beeping
-" set macmeta			" alt=meta in MacVim
 set foldmethod=syntax
 set foldcolumn=2
 set hlsearch
@@ -41,11 +42,13 @@ endif
 nnoremap <Leader>o :tabedit 
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>t :.! date<CR>
-vnoremap <Leader>y "+y		
+nnoremap <Leader>y "+y		
 nnoremap <Leader>p "+p
+nnoremap <Leader>d "+d
+vnoremap <Leader>y "+y		
+vnoremap <Leader>p "+p
+vnoremap <Leader>d "+d
 nnoremap <Leader>h :nohls<CR>
-nnoremap <Leader>d :MacDictWord<CR>
-nnoremap <Leader>q :MacDictQuery<CR>
 nnoremap <Leader>f :set wrap linebreak nolist<CR>
 
 " Vis command to visually
@@ -83,9 +86,6 @@ Plugin 'tpope/vim-abolish'
 
 " airline install
 Plugin 'vim-airline/vim-airline'
-
-" macDictionary install
-Plugin 'johngrib/vim-mac-dictionary'
 
 " wordy install
 Plugin 'reedes/vim-wordy'
