@@ -7,6 +7,9 @@ set nowritebackup
 set directory=~/.vim/swapfiles//
 set undodir=~/.vim/undodir
 set undofile
+set textwidth=0
+set wrapmargin=0
+set wrap linebreak nolist
 set history=1000		" keep 1000 lines of command line history
 set ruler			" show the cursor position all the time
 set showcmd			" display incomplete commands
@@ -50,7 +53,6 @@ vnoremap <Leader>y "+y
 vnoremap <Leader>p "+p
 vnoremap <Leader>d "+d
 nnoremap <Leader>h :nohls<CR>
-nnoremap <Leader>f :set wrap linebreak nolist<CR>
 
 " Vis command to visually
 " select a range of lines
@@ -99,13 +101,6 @@ Plugin 'maxbrunsfeld/vim-yankstack'
 call vundle#end()            " required
 " end Vundle
 
-" vimrcEx augroup
-augroup vimrcEx
-   au!
-
-   " For all text files set textwidth to 74 characters.
-   autocmd FileType text setlocal textwidth=74
-  
 " Don't color directories in nnn
 let g:nnn#command = 'nnn -C'
 
