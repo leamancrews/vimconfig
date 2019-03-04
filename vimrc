@@ -19,6 +19,7 @@ set browsedir=buffer		" in GUI, File->Open at current directory
 set wildmenu			" show tab completions
 set guicursor=a:blinkon0	" no blinking cursor in GUI
 set visualbell			" no beeping
+set guifont=Iosevka:h12
 set foldmethod=syntax
 set foldcolumn=2
 set hlsearch
