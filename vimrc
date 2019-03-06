@@ -1,11 +1,11 @@
 " general settings
 filetype plugin indent on
-colo ron
+colorscheme ron
 set backspace=indent,eol,start
 set nobackup		
 set nowritebackup
 set directory=~/.vim/swapfiles//
-set undodir=~/.vim/undodir
+set undodir=~/.vim/undodir/
 set undofile
 set textwidth=0
 set wrapmargin=0
@@ -22,7 +22,6 @@ set browsedir=buffer		" in GUI, File->Open at current directory
 set wildmenu			" show tab completions
 set guicursor=a:blinkon0	" no blinking cursor in GUI
 set visualbell			" no beeping
-set guifont=Iosevka:h12
 set foldmethod=syntax
 set foldcolumn=2
 set hlsearch
@@ -33,6 +32,7 @@ inoremap <S-CR> <Esc>
 " Meta key
 if has("gui_macvim")
   set macmeta 
+  set guifont=Iosevka:h12
 else
   let c='a'
   while c <= 'z'
