@@ -10,21 +10,25 @@ set undofile
 set textwidth=0
 set wrapmargin=0
 set wrap linebreak nolist
-set history=1000		" keep 1000 lines of command line history
-set ruler			" show the cursor position all the time
-set showcmd			" display incomplete commands
-set incsearch			" do incremental searching
-set number			" show line numbers
-set showmode			" show current mode at the bottom
-set autoread			" reload changed files
-set hidden			" better buffer management
-set browsedir=buffer		" in GUI, File->Open at current directory
-set wildmenu			" show tab completions
-set guicursor=a:blinkon0	" no blinking cursor in GUI
-set visualbell			" no beeping
+set history=1000		
+set ruler			
+set showcmd			
+set incsearch	
+set number
+set showmode	
+set autoread		
+set hidden		
+set browsedir=buffer	
+set wildmenu		
+set guicursor=a:blinkon0
+set visualbell		
 set foldmethod=syntax
 set foldcolumn=2
 set hlsearch
+set tabstop=8
+set softtabstop=4
+set shiftwidth=4
+set expandtab
 syntax on
 let mapleader = ','		
 inoremap <S-CR> <Esc>
