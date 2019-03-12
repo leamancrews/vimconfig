@@ -33,7 +33,8 @@ syntax on
 let mapleader = ','		
 inoremap <S-CR> <Esc>
 
-" Meta key
+" Meta key and
+" MacVim font
 if has("gui_macvim")
   set macmeta 
   set guifont=Iosevka:h12
@@ -57,6 +58,8 @@ vnoremap <Leader>y "+y
 vnoremap <Leader>p "+p
 vnoremap <Leader>d "+d
 nnoremap <Leader>h :nohls<CR>
+nnoremap <Leader>f :zA<CR>
+nnoremap <Leader>b :Vexplore<CR>
 
 " Vis command to visually
 " select a range of lines
@@ -77,9 +80,6 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
-" fzf install
-Plugin 'junegunn/fzf.vim'
 
 " vimwiki install
 Plugin 'vimwiki/vimwiki'
