@@ -78,8 +78,8 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" nnn install
-Plugin 'mcchrish/nnn.vim'
+" fzf install
+Plugin 'junegunn/fzf.vim'
 
 " vimwiki install
 Plugin 'vimwiki/vimwiki'
