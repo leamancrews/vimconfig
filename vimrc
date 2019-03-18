@@ -47,6 +47,11 @@ else
   endw
 endif
 
+" netrw settings
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 3
+let g:netrw_winsize = 50
+
 " Leader key mappings
 nnoremap <Leader>o :tabedit 
 nnoremap <Leader>w :w<CR>
