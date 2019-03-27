@@ -72,6 +72,10 @@ command! -range Vis call setpos('.', [0,<line1>,0,0]) |
                     \ exe "normal V" |
                     \ call setpos('.', [0,<line2>,0,0])
 
+" Change default 'new line' behavior
+nnoremap o o<Esc>
+nnoremap O O<Esc>
+
 " Move visual selection
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
