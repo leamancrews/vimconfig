@@ -2,26 +2,26 @@
 filetype plugin indent on
 colorscheme ron
 set backspace=indent,eol,start
-set nobackup		
+set nobackup            
 set nowritebackup
 set directory=~/.vim/swapfiles//
-set undodir=~/.vim/undodir/
+set undodir=~/.vim/undodir//
 set undofile
 set textwidth=0
 set wrapmargin=0
 set wrap linebreak nolist
-set history=1000		
-set ruler			
-set showcmd			
-set incsearch	
+set history=1000                
+set ruler                       
+set showcmd                     
+set incsearch   
 set number
-set showmode	
-set autoread		
-set hidden		
-set browsedir=buffer	
-set wildmenu		
+set showmode    
+set autoread            
+set hidden              
+set browsedir=buffer    
+set wildmenu            
 set guicursor=a:blinkon0
-set visualbell		
+set visualbell          
 set foldmethod=syntax
 set foldcolumn=2
 set hlsearch
@@ -30,7 +30,7 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 syntax on
-let mapleader = ','		
+let mapleader = ','             
 inoremap <S-CR> <Esc>
 
 " Meta key and
@@ -52,27 +52,6 @@ let g:netrw_liststyle = 3
 let g:netrw_browse_split = 3
 let g:netrw_winsize = 50
 
-" Leader key mappings
-nnoremap <Leader>o :tabedit 
-nnoremap <Leader>w :w<CR>
-nnoremap <Leader>t :.! date<CR>
-nnoremap <Leader>y "+y		
-nnoremap <Leader>p "+p
-nnoremap <Leader>d "+d
-vnoremap <Leader>y "+y		
-vnoremap <Leader>p "+p
-vnoremap <Leader>d "+d
-nnoremap <Leader>h :nohls<CR>
-nnoremap <Leader>f zA<CR>
-nnoremap <Leader>b :Vexplore<CR>
-nnoremap <Leader>c :g/^\s*$/d<CR>
-
-" Vis command to visually
-" select a range of lines
-command! -range Vis call setpos('.', [0,<line1>,0,0]) |
-                    \ exe "normal V" |
-                    \ call setpos('.', [0,<line2>,0,0])
-
 " Change default 'new line' behavior
 nnoremap o o<Esc>
 nnoremap O O<Esc>
@@ -83,6 +62,43 @@ vnoremap K :m '<-2<CR>gv=gv
 
 " W to save a file with sudo
 command! W w !sudo tee % > /dev/null
+
+" Vis command to visually
+" select a range of lines
+command! -range Vis call setpos('.', [0,<line1>,0,0]) |
+                    \ exe "normal V" |
+                    \ call setpos('.', [0,<line2>,0,0])
+
+" Remove tabs
+command! -bar -range=% RemoveTabs call s:remove_tabs(<line1>,<line2>)
+function! s:remove_tabs(line1, line2) abort
+    let view = winsaveview()
+    let mods = 'sil keepj keepp'
+    let range = a:line1 . ',' . a:line2
+    let pat = '^\t\|\(.\)\t'
+    let l:Rep = {-> submatch(1) . repeat(' ', strdisplaywidth("\t", col('.') == 1 ? 0 : virtcol('.') ))}
+    let g = 0
+    while search("\t", 'n') && g < 999
+        exe mods . ' ' . range .'s/' . pat . '/\=l:Rep()/ge'
+        let g += 1
+    endwhile
+    call winrestview(view)
+endfunction
+
+" Leader key mappings
+nnoremap <Leader>o :tabedit 
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>t :.! date<CR>
+nnoremap <Leader>y "+y          
+nnoremap <Leader>p "+p
+nnoremap <Leader>d "+d
+vnoremap <Leader>y "+y          
+vnoremap <Leader>p "+p
+vnoremap <Leader>d "+d
+nnoremap <Leader>h :nohls<CR>
+nnoremap <Leader>f zA<CR>
+nnoremap <Leader>b :Vexplore<CR>
+nnoremap <Leader>c :g/^\s*$/d<CR>
 
 " start Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
