@@ -131,9 +131,6 @@ Plugin 'maxbrunsfeld/vim-yankstack'
 call vundle#end()            " required
 " end Vundle
 
-" Don't color directories in nnn
-let g:nnn#command = 'nnn -C'
-
 " airline customizations
 let g:airline_highlighting_cache = 1
 let g:airline#extensions#default#layout = [
