@@ -85,6 +85,9 @@ function! s:remove_tabs(line1, line2) abort
     call winrestview(view)
 endfunction
 
+" Double-space to do find and replace
+nnoremap <Space><Space> :%s/\<<C-r>=expand("<cword>")<CR>\>/
+
 " Leader key mappings
 nnoremap <Leader>o :tabedit 
 nnoremap <Leader>w :w<CR>
