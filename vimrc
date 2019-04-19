@@ -85,7 +85,7 @@ function! s:remove_tabs(line1, line2) abort
     call winrestview(view)
 endfunction
 
-" Double-space to do find and replace
+" Double-space to do find and replace of current word
 nnoremap <Space><Space> :%s/\<<C-r>=expand("<cword>")<CR>\>/
 
 " Leader key mappings
@@ -102,6 +102,7 @@ nnoremap <Leader>h :nohls<CR>
 nnoremap <Leader>f zA<CR>
 nnoremap <Leader>b :Vexplore<CR>
 nnoremap <Leader>c :g/^\s*$/d<CR>
+nnoremap <Leader>m :%s/^M//g<CR>
 
 " start Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
