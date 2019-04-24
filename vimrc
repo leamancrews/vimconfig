@@ -123,15 +123,6 @@ Plugin 'tpope/vim-abolish'
 " airline install
 Plugin 'vim-airline/vim-airline'
 
-" wordy install
-Plugin 'reedes/vim-wordy'
-
-" sessionman install
-Plugin 'vim-scripts/sessionman.vim'
-
-" yankstack install
-Plugin 'maxbrunsfeld/vim-yankstack'
-
 call vundle#end()            " required
 " end Vundle
 
