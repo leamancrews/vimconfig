@@ -52,6 +52,31 @@ let g:netrw_liststyle = 3
 let g:netrw_browse_split = 3
 let g:netrw_winsize = 50
 
+" Statusline settings
+function! GitBranch()
+  return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+endfunction
+
+function! StatuslineGit()
+  let l:branchname = GitBranch()
+  return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
+endfunction
+
+set statusline=
+set statusline+=%#PmenuSel#
+set statusline+=%{StatuslineGit()}
+set statusline+=%#LineNr#
+set statusline+=\ %f
+set statusline+=%m\
+set statusline+=%=
+set statusline+=%#CursorColumn#
+set statusline+=\ %y
+set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
+set statusline+=\[%{&fileformat}\]
+set statusline+=\ %p%%
+set statusline+=\ %l:%c
+set statusline+=\ 
+
 " Change default 'new line' behavior
 nnoremap o o<Esc>
 nnoremap O O<Esc>
@@ -120,16 +145,6 @@ Plugin 'tpope/vim-fugitive'
 " abolish install
 Plugin 'tpope/vim-abolish'
 
-" airline install
-Plugin 'vim-airline/vim-airline'
-
 call vundle#end()            " required
 " end Vundle
-
-" airline customizations
-let g:airline_highlighting_cache = 1
-let g:airline#extensions#default#layout = [
-      \ [ 'a', 'b', 'c' ],
-      \ [ 'x', 'y', 'z' ]
-      \ ]
 
