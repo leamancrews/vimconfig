@@ -52,7 +52,7 @@ let g:netrw_liststyle = 3
 let g:netrw_browse_split = 3
 let g:netrw_winsize = 50
 
-" Statusline
+" Statusline 
 set laststatus=2
 set statusline=
 set statusline+=%1*
@@ -64,6 +64,7 @@ set statusline+=%3*
 set statusline+=%9*
 set statusline+=%5*
 set statusline+=%m
+set statusline+=\ 
 set statusline+=%F
 set statusline+=\ 
 set statusline+=%3*
@@ -77,6 +78,7 @@ set statusline+=\
 set statusline+=%1*
 set statusline+=\ 
 set statusline+=%{strlen(&fenc)?&fenc:'none'}
+set statusline+=\ 
 set statusline+=%9*
 hi User1 ctermbg=lightgreen ctermfg=black guibg=lightgreen guifg=black
 hi User2 ctermbg=lightblue ctermfg=black guibg=lightblue guifg=black
