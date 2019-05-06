@@ -143,10 +143,23 @@ endfunction
 " Double-space to do find and replace of current word
 nnoremap <Space><Space> :%s/\<<C-r>=expand("<cword>")<CR>\>/
 
+" Swap or transpose lines
+function! s:Swap(a, b)
+  execute a:a.'m'.a:b
+endfunction
+
+function! Transpose(a,b)
+  call s:Swap(a:a,a:b)
+  call s:Swap(a:b-1,a:a-1)
+endfunction
+
+command! -nargs=* Swap :call Transpose(<f-args>)
+command! -range T :call Transpose(<line1>, <line2>)
+
 " Leader key mappings
-nnoremap <Leader>o :tabedit 
-nnoremap <Leader>w :w<CR>
 nnoremap <Leader>t :.! date<CR>
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>o :tabedit 
 nnoremap <Leader>y "+y          
 nnoremap <Leader>p "+p
 nnoremap <Leader>d "+d
