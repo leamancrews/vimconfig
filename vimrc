@@ -63,6 +63,14 @@ set statusline+=%=
 set statusline+=%3*
 set statusline+=%9*
 set statusline+=%5*
+set statusline+=%r
+set statusline+=\ 
+set statusline+=%l
+set statusline+=/
+set statusline+=%L
+set statusline+=\ 
+set statusline+=%c
+set statusline+=\ 
 set statusline+=%m
 set statusline+=\ 
 set statusline+=%F
