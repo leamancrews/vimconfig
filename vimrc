@@ -116,6 +116,7 @@ nnoremap <Leader>f zA<CR>
 nnoremap <Leader>b :Vexplore<CR>
 nnoremap <Leader>c :g/^\s*$/d<CR>
 nnoremap <Leader>m :%s/^M//g<CR>
+nnoremap <Leader>u :setlocal fenc=utf8<CR>
 
 " start Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
