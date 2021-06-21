@@ -1,6 +1,6 @@
 " general settings
 filetype plugin indent on
-colorscheme ron
+colorscheme pablo
 set backspace=indent,eol,start
 set nobackup            
 set nowritebackup
