@@ -29,6 +29,7 @@ set tabstop=8
 set softtabstop=4
 set shiftwidth=4
 set expandtab
+set laststatus=2
 syntax on
 let mapleader = ','             
 inoremap <S-CR> <Esc>
@@ -134,69 +135,15 @@ Plugin 'tpope/vim-fugitive'
 " abolish install
 Plugin 'tpope/vim-abolish'
 
+" lightline install
+Plugin 'itchyny/lightline.vim'
+
+" vadelma colorscheme
+Plugin 'severij/vadelma'
+
 call vundle#end()            " required
 " end Vundle
 
-" Statusline 
-set laststatus=2
-set statusline=
-set statusline+=%1*
-set statusline+=%{StatuslineMode()}
-set statusline+=%2*
-set statusline+=%9*
-set statusline+=%=
-set statusline+=%3*
-set statusline+=%9*
-set statusline+=%5*
-set statusline+=%r
-set statusline+=\ 
-set statusline+=%l
-set statusline+=/
-set statusline+=%L
-set statusline+=\ 
-set statusline+=%c
-set statusline+=\ 
-set statusline+=%m
-set statusline+=\ 
-set statusline+=%F
-set statusline+=\ 
-set statusline+=%3*
-set statusline+=\ 
-set statusline+=%y
-set statusline+=\ 
-set statusline+=%2*
-set statusline+=\ 
-set statusline+=%{&ff}
-set statusline+=\ 
-set statusline+=%1*
-set statusline+=\ 
-set statusline+=%{strlen(&fenc)?&fenc:'none'}
-set statusline+=\ 
-set statusline+=%9*
-hi User1 ctermbg=lightgreen ctermfg=black guibg=lightgreen guifg=black
-hi User2 ctermbg=lightblue ctermfg=black guibg=lightblue guifg=black
-hi User9 ctermbg=black ctermfg=white guibg=black guifg=white
-hi User3 ctermbg=lightcyan ctermfg=black guibg=lightcyan guifg=black
-hi User5 ctermbg=lightyellow ctermfg=black guibg=lightyellow guifg=black
-
-function! StatuslineMode()
-  let l:mode=mode()
-  if l:mode==#"n"
-    return "NORMAL"
-  elseif l:mode==?"v"
-    return "VISUAL"
-  elseif l:mode==#"i"
-    return "INSERT"
-  elseif l:mode==#"R"
-    return "REPLACE"
-  elseif l:mode==?"s"
-    return "SELECT"
-  elseif l:mode==#"t"
-    return "TERMINAL"
-  elseif l:mode==#"c"
-    return "COMMAND"
-  elseif l:mode==#"!"
-    return "SHELL"
-  endif
-endfunction
-
+let g:lightline = {
+    \ 'colorscheme': 'one',
+      \ }
