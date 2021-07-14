@@ -141,6 +141,8 @@ Plugin 'itchyny/lightline.vim'
 " vadelma colorscheme
 Plugin 'severij/vadelma'
 
+Plugin 'wojciechkepka/vim-github-dark'
+
 call vundle#end()            " required
 " end Vundle
 
