@@ -138,7 +138,7 @@ Plugin 'tpope/vim-abolish'
 " lightline install
 Plugin 'itchyny/lightline.vim'
 
-" vadelma colorscheme
+" colorschemes
 Plugin 'severij/vadelma'
 
 Plugin 'wojciechkepka/vim-github-dark'
