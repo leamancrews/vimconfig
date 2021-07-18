@@ -1,6 +1,6 @@
 " general settings
 filetype plugin indent on
-colorscheme pablo
+colorscheme midnite
 set backspace=indent,eol,start
 set nobackup            
 set nowritebackup
@@ -137,6 +137,9 @@ Plugin 'tpope/vim-abolish'
 
 " lightline install
 Plugin 'itchyny/lightline.vim'
+
+" surround install
+Plugin 'tpope/vim-surround'
 
 " colorschemes
 Plugin 'severij/vadelma'
