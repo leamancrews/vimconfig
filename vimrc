@@ -129,17 +129,13 @@ Plugin 'VundleVim/Vundle.vim'
 " vimwiki install
 Plugin 'vimwiki/vimwiki'
 
-" fugitive install
+" tpope plugins
 Plugin 'tpope/vim-fugitive'
-
-" abolish install
 Plugin 'tpope/vim-abolish'
+Plugin 'tpope/vim-surround'
 
 " lightline install
 Plugin 'itchyny/lightline.vim'
-
-" surround install
-Plugin 'tpope/vim-surround'
 
 " colorschemes
 Plugin 'severij/vadelma'
