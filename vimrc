@@ -20,6 +20,7 @@ set autoread
 set hidden              
 set browsedir=buffer    
 set wildmenu            
+set wildmode=longest,list,full
 set guicursor=a:blinkon0
 set visualbell          
 set foldmethod=syntax
