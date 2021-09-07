@@ -149,6 +149,7 @@ Plugin 'wojciechkepka/vim-github-dark'
 call vundle#end()            " required
 " end Vundle
 
+" Lightline colorscheme
 let g:lightline = {
     \ 'colorscheme': 'one',
       \ }
