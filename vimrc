@@ -70,6 +70,7 @@ command! W w !sudo tee % > /dev/null
 
 " Vis command to visually
 " select a range of lines
+" Usage: :1,2Vis
 command! -range Vis call setpos('.', [0,<line1>,0,0]) |
                     \ exe "normal V" |
                     \ call setpos('.', [0,<line2>,0,0])
@@ -94,6 +95,7 @@ endfunction
 nnoremap <Space><Space> :%s/\<<C-r>=expand("<cword>")<CR>\>/
 
 " Swap or transpose lines
+" Usage: :1,2T
 function! s:Swap(a, b)
   execute a:a.'m'.a:b
 endfunction
