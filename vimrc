@@ -63,7 +63,7 @@ vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
 " Visual select line
-nnoremap vv v$h
+nnoremap lv 0v$h
 
 " W to save a file with sudo
 command! W w !sudo tee % > /dev/null
