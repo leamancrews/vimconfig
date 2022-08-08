@@ -200,7 +200,7 @@ endfu
 "Live word count
 "Function from https://vim.fandom.com/wiki/Word_count
 ""Doesn't seem to work with Lightline; status line show word count only
-"Leaving here with last two lines commented until I can figure it out
+"Need to include this in Prose mode only, where it would have the most use
 let g:word_count=wordcount().words
 function WordCount()
     if has_key(wordcount(),'visual_words')
