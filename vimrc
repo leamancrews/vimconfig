@@ -119,7 +119,7 @@ vnoremap <Leader>y "+y
 vnoremap <Leader>p "+p
 vnoremap <Leader>d "+d
 nnoremap <Leader>h :nohls<CR>
-nnoremap <Leader>f zR<CR>
+nnoremap <Leader>z zR<CR>
 nnoremap <Leader>b :Vexplore<CR>
 nnoremap <Leader>c :g/^\s*$/d<CR>
 nnoremap <Leader>m :%s/^M//g<CR>
@@ -148,6 +148,9 @@ Plugin 'junegunn/goyo.vim'
 
 " Pencil plugin
 Plugin 'reedes/vim-pencil'
+
+" Raku syntax
+Plugin 'Raku/vim-raku'
 
 " colorschemes
 Plugin 'severij/vadelma'
