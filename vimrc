@@ -39,7 +39,7 @@ inoremap <S-CR> <Esc>
 " MacVim font
 if has("gui_macvim")
   set macmeta 
-  set guifont=Iosevka:h12
+  set guifont=Iosevka:h16
 else
   let c='a'
   while c <= 'z'
@@ -124,6 +124,7 @@ nnoremap <Leader>b :Vexplore<CR>
 nnoremap <Leader>c :g/^\s*$/d<CR>
 nnoremap <Leader>m :%s/^M//g<CR>
 nnoremap <Leader>u :setlocal fenc=utf8<CR>
+nnoremap <Leader>m g<C-G>
 
 " start Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
